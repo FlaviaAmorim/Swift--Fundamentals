@@ -15,7 +15,17 @@ struct Meal {
 
 var meals: [String: Meal] = ["Breakfast": Meal(food: ["Bagel", "Orange Juice", "Egg Whites"], calories: 530)]
 
+func getMeal(meal: String) -> Meal? {
+    if let possibleMeal = meals[meal] {
+        return possibleMeal
+    } else {
+        return nil
+    }
+}
 
+
+let meal = getMeal(meal: "Breakfast")
+print(getMeal(meal: "Lunch")
 /*:
  iOS comes with a few different APIs for persistence, or saving data. You'll learn more about persistence in another lesson, but for now imagine what an app experience would be like if every time you opened the app all of your data was gone. That would be frustrating, right?
  
@@ -23,4 +33,12 @@ var meals: [String: Meal] = ["Breakfast": Meal(food: ["Bagel", "Orange Juice", "
  */
 
 
+func getSavedLog() -> [String: Any] {
+    if let log = UserDefaults.standard.dictionary(forKey: "mealLog") {
+        return log
+    } else {
+        return [:]
+    }
+}
+print(getSavedLog())
 //: [Previous](@previous)  |  page 4 of 6  |  [Next: Exercise - Failable Initializers](@next)

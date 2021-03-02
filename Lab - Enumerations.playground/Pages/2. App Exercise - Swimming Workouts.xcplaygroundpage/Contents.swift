@@ -5,12 +5,43 @@
 
  Previous app exercises have introduced the idea that your fitness tracking app may allow users to track swimming workouts. Create a `SwimmingWorkout` struct below with properties for `distance`, `time`, and `stroke`. `distance` and `time` should be of type `Double` and will represent distance in meters and time in seconds, and `stroke` should be of type `String`.
  */
+struct SwimmingWorkout {
+    
+    enum Stroke {
+        case freestyle, butterfly, backstroke, breaststroke
+    }
+    
+    static var freestyleWorkout: [SwimmingWorkout] = []
+    static var butterflyWorkout: [SwimmingWorkout] = []
+    static var backstrokeWorkout: [SwimmingWorkout] = []
+    static var breaststrokeWorkout: [SwimmingWorkout] = []
+    
+    var distance: Double
+    var time: Double
+    var stroke: Stroke
+    
+    func save() {
+        switch stroke {
+        case .freestyle:
+            SwimmingWorkout.freestyleWorkout.append(self)
+        case .butterfly:
+            SwimmingWorkout.butterflyWorkout.append(self)
+        case .backstroke:
+            SwimmingWorkout.backstrokeWorkout.append(self)
+        case .breaststroke:
+            SwimmingWorkout.breaststrokeWorkout.append(self)
+        }
+    }
+}
 
 
 /*:
  Allowing `stroke` to be of type `String` isn't very type-safe. Inside the `SwimmingWorkout` struct, create an enum called `Stroke` that has cases for `freestyle`, `butterfly`, `backstroke`, and `breaststroke`. Change the type of `stroke` from `String` to `Stroke`. Create two instances of `SwimmingWorkout` objects.
  */
-
+let freestyleWorkout = SwimmingWorkout(distance: 50, time: 30, stroke: .freestyle)
+freestyleWorkout.save()
+print(SwimmingWorkout.freestyleWorkout)
+let breasttstrokeWorkout = SwimmingWorkout(distance: 100, time: 50, stroke: .breaststroke)
 
 /*:
  Now imagine you want to log swimming workouts separately based on the swimming stroke. You might use arrays as static variables on `SwimmingWorkout` for this. Add four static variables, `freestyleWorkouts`, `butterflyWorkouts`, `backstrokeWorkouts`, and `breaststrokeWorkouts`, to `SwimmingWorkout` above. Each should be of type `[SwimmingWorkout]` and should default to empty arrays.
