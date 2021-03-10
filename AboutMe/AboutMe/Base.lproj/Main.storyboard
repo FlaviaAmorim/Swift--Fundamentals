@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jjg-fs-ayU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bio-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Bio" id="BYZ-38-t0r" customClass="ViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="milky_way" translatesAutoresizingMaskIntoConstraints="NO" id="sAv-fw-7Yi">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eWZ-5p-WPX">
+                                <rect key="frame" x="30" y="384.5" width="354" height="127"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome: Flavia Amorim" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAO-Rb-fvN">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" red="0.89411764705882346" green="0.74509803921568629" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cargo: Programadora iOS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PiD-HW-MXS">
+                                        <rect key="frame" x="0.0" y="46" width="354" height="35"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                        <color key="textColor" red="0.89411764705882346" green="0.74509803921568629" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cidade: Curitiba" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KaG-xm-c3i">
+                                        <rect key="frame" x="0.0" y="91" width="354" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" red="0.89411764705882346" green="0.74509803921568629" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eWZ-5p-WPX" secondAttribute="trailing" constant="30" id="8O9-eE-xaf"/>
+                            <constraint firstItem="eWZ-5p-WPX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DYq-ee-0Fr"/>
+                            <constraint firstAttribute="trailing" secondItem="sAv-fw-7Yi" secondAttribute="trailing" id="LqL-0k-HAi"/>
+                            <constraint firstItem="eWZ-5p-WPX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Yi8-4E-Eav"/>
+                            <constraint firstItem="sAv-fw-7Yi" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Ysf-0s-lXD"/>
+                            <constraint firstItem="sAv-fw-7Yi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="eqr-ER-Rbo"/>
+                            <constraint firstItem="sAv-fw-7Yi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="m1F-hV-UWS"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Bio" image="person" catalog="system" id="Yio-ph-R6i"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="460.86956521739131" y="103.79464285714285"/>
+        </scene>
+        <!--Family-->
+        <scene sceneID="Zhu-Qi-Tzn">
+            <objects>
+                <viewController title="Family" id="ajI-jA-hgd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eaF-jy-HqW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="milky_way" translatesAutoresizingMaskIntoConstraints="NO" id="e3u-I6-kBe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ihk-z9-Qff">
+                                <rect key="frame" x="30" y="361" width="354" height="174"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pai: Luis Bernardo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AH8-tE-vot">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" red="0.89411764709999997" green="0.74509803919999995" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mãe: Vania Amorim" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bn9-kj-1j6">
+                                        <rect key="frame" x="0.0" y="46" width="354" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" red="0.89411764709999997" green="0.74509803919999995" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Irmã: Brenda Stefanie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d18-GO-Ngu">
+                                        <rect key="frame" x="0.0" y="92" width="354" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" red="0.89411764709999997" green="0.74509803919999995" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Irmã: Daniela Cristina" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFW-7n-dqT">
+                                        <rect key="frame" x="0.0" y="138" width="354" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" red="0.89411764709999997" green="0.74509803919999995" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Wcc-hB-yuu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="e3u-I6-kBe" firstAttribute="bottom" secondItem="Wcc-hB-yuu" secondAttribute="bottom" id="B51-J0-ph5"/>
+                            <constraint firstItem="Wcc-hB-yuu" firstAttribute="trailing" secondItem="ihk-z9-Qff" secondAttribute="trailing" constant="30" id="MSv-OO-Fuo"/>
+                            <constraint firstItem="ihk-z9-Qff" firstAttribute="centerY" secondItem="eaF-jy-HqW" secondAttribute="centerY" id="Ufg-dt-evO"/>
+                            <constraint firstAttribute="trailing" secondItem="e3u-I6-kBe" secondAttribute="trailing" id="Vx8-Nu-2T8"/>
+                            <constraint firstItem="e3u-I6-kBe" firstAttribute="top" secondItem="eaF-jy-HqW" secondAttribute="top" id="jHY-Ff-VuJ"/>
+                            <constraint firstItem="e3u-I6-kBe" firstAttribute="leading" secondItem="eaF-jy-HqW" secondAttribute="leading" id="rSK-ia-Udq"/>
+                            <constraint firstItem="ihk-z9-Qff" firstAttribute="leading" secondItem="Wcc-hB-yuu" secondAttribute="leading" constant="30" id="zOc-fw-HI4"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Family" image="Icon-Small" id="Wo9-5q-Dw5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="00f-Ls-Qfa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1276.8115942028987" y="103.79464285714285"/>
+        </scene>
+        <!--Hobbies-->
+        <scene sceneID="5TX-zV-Wc6">
+            <objects>
+                <viewController title="Hobbies" id="Jh8-Og-56l" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hfY-sF-qgG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="milky_way" translatesAutoresizingMaskIntoConstraints="NO" id="HLq-eN-8Ua">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="U4Y-mv-pA9">
+                                <rect key="frame" x="30" y="384" width="354" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ler" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEL-hV-sBp">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" red="0.89411764709999997" green="0.74509803919999995" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passear" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEg-vt-SiH">
+                                        <rect key="frame" x="0.0" y="46" width="354" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" red="0.89411764709999997" green="0.74509803919999995" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assistir filme" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xM2-JM-sAH">
+                                        <rect key="frame" x="0.0" y="92" width="354" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" red="0.89411764709999997" green="0.74509803919999995" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Fpb-f9-lfh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="U4Y-mv-pA9" firstAttribute="leading" secondItem="Fpb-f9-lfh" secondAttribute="leading" constant="30" id="0WL-Lw-0FE"/>
+                            <constraint firstItem="HLq-eN-8Ua" firstAttribute="top" secondItem="hfY-sF-qgG" secondAttribute="top" id="DDU-Yc-bVD"/>
+                            <constraint firstItem="Fpb-f9-lfh" firstAttribute="bottom" secondItem="HLq-eN-8Ua" secondAttribute="bottom" id="GPZ-tC-hv0"/>
+                            <constraint firstItem="HLq-eN-8Ua" firstAttribute="leading" secondItem="hfY-sF-qgG" secondAttribute="leading" id="cmP-P2-DPe"/>
+                            <constraint firstItem="Fpb-f9-lfh" firstAttribute="trailing" secondItem="U4Y-mv-pA9" secondAttribute="trailing" constant="30" id="dBx-Mj-e62"/>
+                            <constraint firstItem="U4Y-mv-pA9" firstAttribute="centerY" secondItem="hfY-sF-qgG" secondAttribute="centerY" id="e9h-gc-3yc"/>
+                            <constraint firstAttribute="trailing" secondItem="HLq-eN-8Ua" secondAttribute="trailing" id="fNB-vf-VPE"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Hobbies" image="Icon-Small-1" id="R0M-56-Uwc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="beq-ry-rl5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2071.0144927536235" y="103.79464285714285"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="dwl-iH-XCi">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="jjg-fs-ayU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ajg-l8-kIN">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="siu-qA-x4b"/>
+                        <segue destination="ajI-jA-hgd" kind="relationship" relationship="viewControllers" id="UTl-d5-owI"/>
+                        <segue destination="Jh8-Og-56l" kind="relationship" relationship="viewControllers" id="Nd2-SV-FiC"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cRG-Bm-Ggj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1277" y="-702"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon-Small" width="29" height="29"/>
+        <image name="Icon-Small-1" width="29" height="29"/>
+        <image name="milky_way" width="6016" height="4000"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
